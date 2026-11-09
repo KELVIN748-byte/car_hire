@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Management - Car Hire Management System</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Car Hire System</h2>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="vehicles.html">Vehicle Records</a></li>
+        <li class="active"><a href="customers.html">Customer Details</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="index.html">Home / Landing</a></li>
+      </ul>
+      <div class="sidebar-footer">
+        <a href="login.html">Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-navbar">
+        <div class="search-bar">
+          <input type="text" placeholder="Search customers by name, phone, email...">
+        </div>
+        <div class="user-profile">
+          <div class="user-avatar">AD</div>
+          <span style="font-weight: 500; font-size: 0.95rem;">Admin Staff</span>
+        </div>
+      </header>
+
+      <div class="content-body">
+        <div class="section-header">
+          <h1>Customer Management</h1>
+          <a href="#add-customer" class="btn">+ Add New Customer</a>
+        </div>
+
+        <!-- Customers Table -->
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Customer ID</th>
+                <th>Full Name</th>
+                <th>Email Address</th>
+                <th>Phone Number</th>
+                <th>Driver's License No.</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#CUST-001</td>
+                <td>John Banda</td>
+                <td>john.banda@example.com</td>
+                <td>+265 991 234 567</td>
+                <td>DL-MW-883921</td>
+                <td>
+                  <div class="action-btns">
+                    <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#CUST-002</td>
+                <td>Grace Phiri</td>
+                <td>grace.phiri@example.com</td>
+                <td>+265 888 765 432</td>
+                <td>DL-MW-443219</td>
+                <td>
+                  <div class="action-btns">
+                    <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#CUST-003</td>
+                <td>David Mwale</td>
+                <td>david.mwale@example.com</td>
+                <td>+265 999 112 233</td>
+                <td>DL-MW-119283</td>
+                <td>
+                  <div class="action-btns">
+                    <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Add / Edit Customer Form Section -->
+        <div id="add-customer" class="form-container" style="margin-top: 3rem;">
+          <h2 style="font-size: 1.25rem; margin-bottom: 1.5rem;">Add / Edit Customer Details</h2>
+          <form>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="e.g. Kondwani Tembo" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="e.g. kondwani@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="e.g. +265 991 111 222" required>
+            </div>
+            <div class="form-group">
+              <label for="license">Driver's License Number</label>
+              <input type="text" id="license" placeholder="e.g. DL-MW-123456" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Residential Address</label>
+              <textarea id="address" rows="3" placeholder="Enter customer address"></textarea>
+            </div>
+            <button type="submit" class="btn">Save Customer Record</button>
+          </form>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

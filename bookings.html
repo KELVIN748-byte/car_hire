@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings Management - Car Hire Management System</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Car Hire System</h2>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="vehicles.html">Vehicle Records</a></li>
+        <li><a href="customers.html">Customer Details</a></li>
+        <li class="active"><a href="bookings.html">Bookings</a></li>
+        <li><a href="index.html">Home / Landing</a></li>
+      </ul>
+      <div class="sidebar-footer">
+        <a href="login.html">Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-navbar">
+        <div class="search-bar">
+          <input type="text" placeholder="Search bookings by ID, customer, vehicle...">
+        </div>
+        <div class="user-profile">
+          <div class="user-avatar">AD</div>
+          <span style="font-weight: 500; font-size: 0.95rem;">Admin Staff</span>
+        </div>
+      </header>
+
+      <div class="content-body">
+        <div class="section-header">
+          <h1>Car Hire Bookings</h1>
+          <a href="#add-booking" class="btn">+ Create New Booking</a>
+        </div>
+
+        <!-- Bookings Table -->
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Customer</th>
+                <th>Vehicle</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#BK-1001</td>
+                <td>John Banda</td>
+                <td>Toyota Corolla (AB-1234)</td>
+                <td>2026-11-10</td>
+                <td>2026-11-15</td>
+                <td><span class="badge badge-success">Active</span></td>
+                <td>
+                  <div class="action-btns">
+                    <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#BK-1002</td>
+                <td>Grace Phiri</td>
+                <td>Toyota Hilux (XY-5678)</td>
+                <td>2026-11-12</td>
+                <td>2026-11-18</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td>
+                  <div class="action-btns">
+                    <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#BK-1003</td>
+                <td>David Mwale</td>
+                <td>Honda Fit (LM-9012)</td>
+                <td>2026-11-01</td>
+                <td>2026-11-05</td>
+                <td><span class="badge badge-danger">Completed</span></td>
+                <td>
+                  <div class="action-btns">
+                    <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Create / Edit Booking Form Section -->
+        <div id="add-booking" class="form-container" style="margin-top: 3rem;">
+          <h2 style="font-size: 1.25rem; margin-bottom: 1.5rem;">Create / Update Hire Booking</h2>
+          <form>
+            <div class="form-group">
+              <label for="bookingCustomer">Select Customer</label>
+              <select id="bookingCustomer" required>
+                <option value="">Choose registered customer</option>
+                <option value="John Banda">John Banda (#CUST-001)</option>
+                <option value="Grace Phiri">Grace Phiri (#CUST-002)</option>
+                <option value="David Mwale">David Mwale (#CUST-003)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bookingVehicle">Select Vehicle</label>
+              <select id="bookingVehicle" required>
+                <option value="">Choose available vehicle</option>
+                <option value="Toyota Corolla">Toyota Corolla - AB-1234 (MK 1,350/day)</option>
+                <option value="Honda Fit">Honda Fit - LM-9012 (MK 1,050/day)</option>
+                <option value="Nissan X-Trail">Nissan X-Trail - TZ-3456 (MK 5,900/day)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="startDate">Start Date</label>
+              <input type="date" id="startDate" required>
+            </div>
+            <div class="form-group">
+              <label for="endDate">End Date</label>
+              <input type="date" id="endDate" required>
+            </div>
+            <div class="form-group">
+              <label for="bookingStatus">Booking Status</label>
+              <select id="bookingStatus" required>
+                <option value="Pending">Pending</option>
+                <option value="Active">Active</option>
+                <option value="Completed">Completed</option>
+                <option value="Cancelled">Cancelled</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Save Booking</button>
+          </form>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
