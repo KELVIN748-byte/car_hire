@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Car Hire</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="public-container">
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+      <span>Special Offer</span> Get 10% off on all monthly vehicle leases this month! Contact us today at +265 991 234 567.
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="public-navbar">
+      <a href="index.html" class="logo">Online Car Hire</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vehicles.html">Our Cars</a></li>
+        <li><a href="login.html" class="btn btn-sm">Staff Login</a></li>
+      </ul>
+    </header>
+
+    <!-- Main Content Body -->
+    <div class="content-body" style="max-width: 800px; margin: 3rem auto; width: 100%;">
+      <div class="form-container" style="max-width: 100%;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h1 style="font-size: 2rem; color: var(--primary); font-weight: 800; margin-bottom: 0.5rem;">Vehicle Booking Registration</h1>
+          <p style="color: var(--text-light); font-size: 1rem;">Please fill in your personal and travel details below to reserve your vehicle.</p>
+        </div>
+
+        <form action="vehicles.html" method="GET" onsubmit="alert('Booking registration submitted successfully! We will contact you shortly.');">
+          <div class="form-group">
+            <label for="carModel">Selected Vehicle / Model</label>
+            <select id="carModel" required>
+              <option value="">Select vehicle model</option>
+              <option value="Toyota Corolla">Toyota Corolla - Automatic ($1,350/mo)</option>
+              <option value="Honda Fit">Honda Fit - Automatic ($1,050/mo)</option>
+              <option value="Nissan X-Trail">Nissan X-Trail - Automatic ($2,100/mo)</option>
+              <option value="Toyota Hilux">Toyota Hilux Double Cab - Manual ($2,700/mo)</option>
+              <option value="Hyundai Elantra">Hyundai Elantra - Automatic ($1,500/mo)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneContact">Contact Phone Number / WhatsApp</label>
+            <input type="tel" id="phoneContact" placeholder="e.g. +265 991 234 567" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nationalId">National ID / Passport Number</label>
+            <input type="text" id="nationalId" placeholder="Enter National ID or Passport No." required>
+          </div>
+
+          <div class="form-group">
+            <label for="driveOption">Driving Option</label>
+            <select id="driveOption" required>
+              <option value="">Select option</option>
+              <option value="Self Drive">Self Drive</option>
+              <option value="Chauffeur Service">Chauffeur Service (Professional Driver)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" required>
+              <option value="">Select payment method</option>
+              <option value="Credit Card">Credit / Debit Card</option>
+              <option value="Mobile Money">Mobile Money (Airtel / TNM)</option>
+              <option value="Bank Transfer">Direct Bank Transfer</option>
+              <option value="Cash on Delivery">Cash on Delivery / Pickup</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="homeLocation">Home Location / Residential Address</label>
+            <input type="text" id="homeLocation" placeholder="e.g. Area 10, Lilongwe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="useLocation">Location to Use the Car</label>
+            <input type="text" id="useLocation" placeholder="e.g. Lilongwe & Blantyre routes" required>
+          </div>
+
+          <div class="form-group">
+            <label for="duration">Duration of Use</label>
+            <input type="text" id="duration" placeholder="e.g. 2 Weeks or 1 Month" required>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%; justify-content: center; margin-top: 1.5rem; padding: 0.9rem;">Register</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <a href="vehicles.html" style="color: var(--text-light); text-decoration: none; font-size: 0.95rem;">&larr; Back to Vehicle Fleet</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer with Contact Details -->
+    <footer class="public-footer" style="margin-top: 4rem;">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Online Car Hire</h3>
+          <p>Your trusted partner for reliable, safe, and comfortable vehicle rentals in Lilongwe, Malawi and across the region.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicles.html">Our Cars</a></li>
+            <li><a href="login.html">Staff Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Details</h3>
+          <p>📞 Phone / WhatsApp: +265 991 234 567</p>
+          <p>✉️ Email: info@primedrive.mw</p>
+          <p>📍 Office: Area 14, Capital City, Lilongwe, Malawi</p>
+        </div>
+        <div class="footer-col">
+          <h3>Working Hours</h3>
+          <p>Mon - Fri: 08:00 AM - 06:00 PM</p>
+          <p>Sat - Sun: 09:00 AM - 04:00 PM</p>
+          <p>🚨 24/7 Emergency Roadside Support</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Online Car Hire. Headquartered in Lilongwe, Malawi. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
