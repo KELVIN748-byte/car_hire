@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Car Hire Management System</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Online Car Hire</h2>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="active"><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="vehicles.html">Vehicle Records</a></li>
+        <li><a href="customers.html">Customer Details</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="index.html">Home / Landing</a></li>
+      </ul>
+      <div class="sidebar-footer">
+        <a href="login.html">Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-navbar">
+        <div class="search-bar">
+          <input type="text" placeholder="Search vehicles, customers, bookings...">
+        </div>
+        <div class="user-profile">
+          <div class="user-avatar">AD</div>
+          <span style="font-weight: 500; font-size: 0.95rem;">Admin Staff</span>
+        </div>
+      </header>
+
+      <div class="content-body">
+        <div class="section-header">
+          <h1>System Dashboard</h1>
+          <a href="bookings.html" class="btn">+ New Booking</a>
+        </div>
+
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>Total Vehicles</h3>
+            <div class="number">6</div>
+          </div>
+          <div class="stat-card">
+            <h3>Available Cars</h3>
+            <div class="number">4</div>
+          </div>
+          <div class="stat-card">
+            <h3>Active Bookings</h3>
+            <div class="number">1</div>
+          </div>
+          <div class="stat-card">
+            <h3>Registered Customers</h3>
+            <div class="number">6</div>
+          </div>
+        </div>
+
+        <!-- Recent Bookings Table -->
+        <div class="section-header" style="margin-top: 2rem;">
+          <h2 style="font-size: 1.25rem;">Recent Hire Bookings</h2>
+          <a href="bookings.html" class="btn btn-secondary btn-sm">View All</a>
+        </div>
+
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Customer Name</th>
+                <th>Vehicle</th>
+                <th>Dates</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#BK-1001</td>
+                <td>John Banda</td>
+                <td>Toyota Corolla (AB-1234)</td>
+                <td>Nov 10, 2026 - Nov 15, 2026</td>
+                <td><span class="badge badge-success">Active</span></td>
+              </tr>
+              <tr>
+                <td>#BK-1002</td>
+                <td>Grace Phiri</td>
+                <td>Toyota Hilux (XY-5678)</td>
+                <td>Nov 12, 2026 - Nov 18, 2026</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+              </tr>
+              <tr>
+                <td>#BK-1003</td>
+                <td>David Mwale</td>
+                <td>Honda Fit (LM-9012)</td>
+                <td>Nov 01, 2026 - Nov 05, 2026</td>
+                <td><span class="badge badge-danger">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
